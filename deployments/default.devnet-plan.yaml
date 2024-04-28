@@ -11,15 +11,29 @@ plan:
         - contract-publish:
             contract-name: dao
             expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
-            cost: 4820
+            cost: 2730
             path: "contracts\\dao.clar"
             anchor-block-only: true
             clarity-version: 2
         - contract-publish:
             contract-name: staking
             expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
-            cost: 9930
+            cost: 11330
             path: "contracts\\staking.clar"
+            anchor-block-only: true
+            clarity-version: 2
+        - contract-publish:
+            contract-name: token
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            cost: 11950
+            path: "contracts\\token.clar"
+            anchor-block-only: true
+            clarity-version: 2
+        - contract-publish:
+            contract-name: voting
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            cost: 17590
+            path: "contracts\\voting.clar"
             anchor-block-only: true
             clarity-version: 2
       epoch: "2.5"
